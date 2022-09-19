@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentGame">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/atma_light"
+        android:rotation="27"
+        android:text="Sdeck!"
+        android:textColor="#E64A19"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/atma_light"
+        android:rotation="27"
+        android:text="Dini Charte!"
+        android:textAlignment="viewStart"
+        android:textColor="#E64A19"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <Button
+        android:id="@+id/button_end_game"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="#CC323232"
+        android:fontFamily="@font/atma_bold"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="#BF360C"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/atma_bold"
+        android:text="Spieler am Zug:"
+        android:textColor="#BF360C"
+        app:layout_constraintStart_toEndOf="@+id/button_end_game"
+        app:layout_constraintTop_toTopOf="@+id/button_end_game" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_bold"
+        android:text="Läbe:"
+        android:textColor="#BF360C"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView_current_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/atma_light"
+        android:text="temp_player"
+        android:textColor="#BF360C"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="@+id/button_end_game" />
+
+    <TextView
+        android:id="@+id/textView_current_lifes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/atma_light"
+        android:text="temp_lifes"
+        android:textColor="#BF360C"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <ImageView
+        android:id="@+id/trade_card_1"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="-30"
+        android:src="@drawable/back2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <ImageView
+        android:id="@+id/trade_card_2"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="-30"
+        android:src="@drawable/back2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/trade_card_3"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="-30"
+        android:src="@drawable/back2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <ImageView
+        android:id="@+id/player_card_1"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="0"
+        android:src="@drawable/back2"
+        android:tag="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <ImageView
+        android:id="@+id/player_card_2"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="0"
+        android:src="@drawable/back2"
+        android:tag="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/player_card_3"
+        android:layout_width="135dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="0"
+        android:src="@drawable/back2"
+        android:tag="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:background="#0A2D28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:background="#CC323232"
+            android:elevation="10dp"
+            android:fontFamily="@font/atma_bold"
+            android:text="Wiiter"
+            android:textAlignment="center"
+            android:textColor="#BF360C"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_skip"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:background="#CC323232"
+            android:elevation="10dp"
+            android:fontFamily="@font/atma_bold"
+            android:text="Passe"
+            android:textAlignment="center"
+            android:textColor="#BF360C"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_stop"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toEndOf="@+id/button_continue"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:background="#CC323232"
+            android:elevation="10dp"
+            android:fontFamily="@font/atma_bold"
+            android:text="Stop"
+            android:textAlignment="center"
+            android:textColor="#BF360C"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_trade_all_cards"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#CC323232"
+            android:elevation="10dp"
+            android:fontFamily="@font/atma_bold"
+            android:text="Alli Charte Tusche"
+            android:textAlignment="center"
+            android:textColor="#BF360C"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_skip"
+            app:layout_constraintEnd_toEndOf="@+id/button_stop"
+            app:layout_constraintStart_toStartOf="@+id/button_continue"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

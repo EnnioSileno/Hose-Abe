@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMainMenu">
+    <fragment
+        android:id="@+id/fragmentMainMenu"
+        android:name="ch.ennio.sileno.hoseabe.FragmentMainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/navigate_main_player"
+            app:destination="@id/fragmentPlayerSelection"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPlayerSelection"
+        android:name="ch.ennio.sileno.hoseabe.FragmentPlayerSelection"
+        android:label="fragment_player_selection"
+        tools:layout="@layout/fragment_player_selection" >
+        <action
+            android:id="@+id/navigate_player_game"
+            app:destination="@id/fragmentGame"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGame"
+        android:name="ch.ennio.sileno.hoseabe.FragmentGame"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/navigate_game_main"
+            app:destination="@id/fragmentMainMenu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/fragmentMainMenu"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
