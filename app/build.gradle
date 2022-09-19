@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "ch.zhaw.moba1.hoseabe"
+        applicationId 'ch.ennio.sileno.hoseabe'
         minSdk 28
         targetSdk 31
         versionCode 1
